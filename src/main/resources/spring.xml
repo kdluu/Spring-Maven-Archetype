@@ -3,7 +3,12 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<bean id="dev" class="org.example.Dev">
-
+    <bean id="dev" class="org.example.Dev">
+        <property name="age" value="10"/>
+    </bean>
+    <bean id="dev1" class="org.example.Dev">
+        <property name="age" value="25" />
+    </bean>
+    <bean id="laptop" class="org.example.Laptop">
     </bean>
 </beans>
