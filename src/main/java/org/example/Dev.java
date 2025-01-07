@@ -2,7 +2,7 @@ package org.example;
 
 public class Dev {
 
-    private Laptop laptop;
+    private Computer computer;
     private int age;
 
     public int getAge() {
@@ -17,22 +17,16 @@ public class Dev {
         System.out.println("Dev constructor");
     }
 
-    public Dev(Laptop laptop) {
-        this.laptop = laptop;
-        System.out.println("Dev1 constructor");
+    public Computer getComputer() {
+        return computer;
     }
 
-    public Laptop getLaptop() {
-        return laptop;
+    public void setComputer(Computer computer) {
+        this.computer = computer;
     }
-
-    public void setLaptop(Laptop laptop) {
-        this.laptop = laptop;
-    }
-
 
     public void build() {
         System.out.println("Working on Awesome project!");
-        laptop.compile();
+        computer.compile();
     }
 }
